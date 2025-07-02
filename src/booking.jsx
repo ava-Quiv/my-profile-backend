@@ -37,6 +37,15 @@ export default function BookingForm() {
         <h2 className="text-2xl font-bold text-blue-700 text-center">Book a Service</h2>
 
         <input
+          type="name"
+          name="name"
+          placeholder="Your name"
+          className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:border-blue-300"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
+        <input
           type="email"
           name="email"
           placeholder="Your Email"
